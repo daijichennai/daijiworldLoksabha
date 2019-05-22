@@ -73,8 +73,12 @@ export class HomePage {
       }
     }); 
     
-   
     this.getElectionStatus();
+    setInterval(() => {
+      //alert('ask');
+      this.getElectionStatus();
+    }, 180000);
+    
   }
 
   toggleGroup(group) {
